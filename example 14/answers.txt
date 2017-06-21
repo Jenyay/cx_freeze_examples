@@ -1,0 +1,20 @@
+Скопировать файл
+C:\Users\jenyay\AppData\Roaming\Python\Scripts\cxfreeze-quickstart в
+cxfreeze-quickstart.py
+
+
+----
+
+
+> py -3 cxfreeze-quickstart.py
+Project name: My project
+Version [1.0]: 0.0.14
+Description: Example for article.
+Python file to make executable from: example_14.py
+Executable file name [example_14]: hello.exe
+(C)onsole application, (G)UI application, or (S)ervice [C]: G
+Save setup script to [setup.py]:
+
+Setup script written to setup.py; run it as:
+    python setup.py build
+Run this now [n]? n
