@@ -2,7 +2,7 @@
 
 from cx_Freeze import setup, Executable
 
-executables = [Executable('example_06.py')]
+executables = [Executable('example.py')]
 
 excludes = ['unicodedata', 'logging', 'unittest', 'email', 'html', 'http', 'urllib',
             'xml', 'pydoc', 'doctest', 'argparse', 'datetime', 'zipfile',

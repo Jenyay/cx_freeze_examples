@@ -2,7 +2,7 @@
 
 from cx_Freeze import setup, Executable
 
-executables = [Executable('example_02.py')]
+executables = [Executable('example.py')]
 
 options = {
     'build_exe': {

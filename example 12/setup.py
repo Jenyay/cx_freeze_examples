@@ -2,7 +2,7 @@
 
 from cx_Freeze import setup, Executable
 
-executables = [Executable('example_12.py', targetName='hello_wx.exe')]
+executables = [Executable('example.py', targetName='hello_wx.exe')]
 
 excludes = ['logging', 'unittest', 'email', 'html', 'http', 'urllib', 'xml',
             'unicodedata', 'bz2', 'select']

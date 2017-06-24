@@ -2,7 +2,7 @@
 
 from cx_Freeze import setup, Executable
 
-executables = [Executable('example_15.py',
+executables = [Executable('example.py',
                           targetName='hello_wx.exe',
                           base='Win32GUI',
                           icon='example.ico')]

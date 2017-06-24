@@ -2,7 +2,7 @@
 
 from cx_Freeze import setup, Executable
 
-executables = [Executable('example_01.py')]
+executables = [Executable('example.py')]
 
 setup(name='hello_world',
       version='0.0.1',
