@@ -1,3 +1,5 @@
+python setup.py bdist_msi
+
 В пути до setup.py не должно быть русских букв, иначе будет возникать ошибка:
 
 Traceback (most recent call last):

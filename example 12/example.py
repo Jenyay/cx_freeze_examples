@@ -7,7 +7,7 @@ class MyApp(wx.App):
     def OnInit(self):
         self.mainWnd = wx.Frame(None, -1, "")
         self.SetTopWindow(self.mainWnd)
-        self.mainWnd.SetTitle('Hello wx_Freeze')
+        self.mainWnd.SetTitle('Hello wxPython')
         self.mainWnd.Show()
         return True
 

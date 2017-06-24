@@ -2,5 +2,5 @@
 
 
 if __name__ == '__main__':
-    print('Hello world!')
     module = __import__('json')
+    print('Hello world!')

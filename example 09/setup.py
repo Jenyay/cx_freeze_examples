@@ -13,15 +13,12 @@ excludes = ['unicodedata', 'logging', 'unittest', 'email', 'html', 'http', 'urll
             'bz2', 'fnmatch', 'getopt', 'string', 'stringprep',
             'contextlib', 'quopri', 'copy', 'imp', 'linecache']
 
-includes = ['json']
-
 zip_include_packages = ['collections', 'encodings', 'importlib', 'json']
 
 options = {
     'build_exe': {
         'include_msvcr': True,
         'excludes': excludes,
-        'includes': includes,
         'zip_include_packages': zip_include_packages,
         'build_exe': 'build_windows',
     }

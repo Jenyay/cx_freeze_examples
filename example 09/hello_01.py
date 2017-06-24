@@ -1,6 +1,7 @@
 # coding: utf-8
 
+import json
+
 
 if __name__ == '__main__':
-    module = __import__('json')
     print('Hello world 01!')

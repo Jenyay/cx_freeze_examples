@@ -1,18 +1,27 @@
+# coding: utf-8
+
 from cx_Freeze import setup, Executable
 
-# Dependencies are automatically detected, but it might need
-# fine tuning.
-buildOptions = dict(packages = [], excludes = [])
+executables = [Executable('example.py',
+                          targetName='hello_wx.exe',
+                          base='Win32GUI',
+                          icon='example.ico')]
 
-import sys
-base = 'Win32GUI' if sys.platform=='win32' else None
+excludes = ['logging', 'unittest', 'email', 'html', 'http', 'urllib', 'xml',
+            'unicodedata', 'bz2', 'select']
 
-executables = [
-    Executable('example_14.py', base=base, targetName = 'hello.exe')
-]
+zip_include_packages = ['collections', 'encodings', 'importlib', 'wx']
 
-setup(name='My project',
-      version = '0.0.14',
-      description = 'Example for article.',
-      options = dict(build_exe = buildOptions),
-      executables = executables)
+options = {
+    'build_exe': {
+        'include_msvcr': True,
+        'excludes': excludes,
+        'zip_include_packages': zip_include_packages,
+    }
+}
+
+setup(name='hello_world',
+      version='0.0.14',
+      description='My Hello World App!',
+      executables=executables,
+      options=options)
